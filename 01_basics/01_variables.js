@@ -11,7 +11,7 @@ accountEmail = "change@gmail.com"
 accountPassword = "54321"
 accountCity = "Mumbai"
 
-// printing data in tabular structure
+// print data in tabular structure
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
 
 /*
