@@ -37,3 +37,34 @@ const myFunction = function(){
     console.log("Hello World!");
 }
 console.log(typeof myFunction); // function
+
+
+
+
+// ***************************************************************************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+// Primitive Stack memory ke andar jaate hai aur stack memory se value ka copy milta hai
+// Non-Primitive heap memory ke andar jaate hai aur heap memory se value nahi reference milta hai
+
+let myYoutubename = "TheRoamerShivam";
+
+let anothername = myYoutubename;
+anothername = "ShivamCodingSchool"
+
+console.log(myYoutubename); // TheRoamerShivam
+console.log(anothername); // ShivamCodingSchool
+
+
+
+let userOne = {
+    email: "userOne@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "userTwo@google.com";
+
+console.log(userOne.email); // userTwo@google.com
+console.log(userTwo.email); // userTwo@google.com
